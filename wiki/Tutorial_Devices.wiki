@@ -67,7 +67,7 @@ def loop():
 
 def destroy():
     gpio0 = webiopi.deviceInstance("gpio0") # retrieve the device named "gpio0" in the configuration 
-    gpio0.digitalWrite(HEATER, GPIO.LOW) # turn Devices in Python script without REST mappinged Python script==
+    gpio0.digitalWrite(HEATER, GPIO.LOW) # turn Devices in Python scripts without REST mappinged Python script==
 If you don't need or don't want your devices to be bound to the REST API, you can avoid setting them in the configuration file and initialize the driver by yourself. You will just need to import the driver from the correct package. You can also use the whole library in your own Python script, without the WebIOPi HTTP server.
 
 For instance, with our BMP085 andimport webiopi
