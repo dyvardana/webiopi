@@ -37,9 +37,7 @@ gpio0 = MCP23008 slave:0x20
 Ensure you don't have any *doc-root* directive in the *`[HTTP]`* section to use defaults web apps, save, and restart webiopi to use the device monitor (http://raspberrypi:8000/app/devices-monitor/).
 
 Following example shows several devices displayed in the monitor.
-<p align="center">http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-devices1.png</p>
-
-==Python scripts : Heater example ==
+<p align="center">http://trouch.com/wp-content/uploads/2013/03/webiopi-0.6-d=Python scripts : Heater example ==
 When devices are named in the configuration file, drivers are automatically called to initialize the device. We need to use the *webiopi.deviceInstance(name)* function in the Python script to retrieve the device object instance for the given name. Then we can use functions of the drivers, depending of interfaces supported. You will find a link to all interfaces supported with a complete function list on the top of each device wiki pages. See [BMP085] and [MCP230xx] for instance.
 {{{
 import webiopi
@@ -67,11 +65,7 @@ def loop():
 
 def destroy():
     gpio0 = webiopi.deviceInstance("gpio0") # retrieve the device named "gpio0" in the configuration 
-    gpio0.digitalWrite(HEATER, GPIO.LOW) # turn off to avoid over heating
-}}}
-
-==Javascript Library==
-All functions from drivers are bound to the REST API. Most of them are also available directly in the Javascript library. Simply pass the configured name for the device to the Javascript constructor.
+    gpio0.digitalWrite(HEATER, GPIO.LOW) # turn or.
 {{{
 
 }}}
@@ -93,3 +87,7 @@ def setup():
 ...
 
 def 
+
+==Javascript Library==
+If you set the device in the configuration file, all functions from the driverrary==
+All functions from drivers are bound to the REST API. Most of them are also available directly in the Javascript library. Simply pass the configured name for the device to the Javascript constr
