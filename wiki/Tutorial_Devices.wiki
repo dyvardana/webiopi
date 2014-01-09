@@ -58,10 +58,13 @@ def loop():
 
     # Turn ON heater when passing below ths minimum temperature
     if (celcius < MIN):
-        gpio0.digitalWrite(HEATER, GPIO.HIGH)
+        gpio0.diggitalWrite(HEATER, GPIO.HIGH)
 
    # Turn OFF heater when reachinsius >= MAX):
         gpio0.digitalWrite(HEATER, GPIO.LOW)
+
+    # gives CPU some time before looping again
+    webiopi.sleep(1)
 
 # destroy function is called at WebIOPi shutdown0.digitalWrite(HEATER, GPIO.LOW)
 
@@ -95,10 +98,13 @@ def loop():med "gpio0" in the configuration
 
     # Turn ON heater when passing below ths minimum temperature
     if (celcius < MIN):
-        gpio0.digitalWrite(HEATER, GPIO.HIGH)
+        gpio0.diggitalWrite(HEATER, GPIO.HIGH)
 
    # Turn OFF heater when reachinsius >= MAX):
         gpio0.digitalWrite(HEATER, GPIO.LOW)
+
+    # gives CPU some time before looping again
+    webiopi.sleep(1)
 
 # destroy function is called at WebIOPi shutdown
 def destroy():med "gpio0" in the configuration 
