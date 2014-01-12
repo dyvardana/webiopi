@@ -35,7 +35,7 @@ gpio0 = MCP23008 slave:0x20
 }}}
 
 Ensure you don't have any *doc-root* directive in the *`[HTTP]`* section to use defaults web apps, save, and restart webiopi to use the device monitor (http://raspberr<p align="center">http://trouch.com/wp-content/uploads/2014/01/webiopi-tutorials-device-testoads/2013/03Devices in Python scripts with REST mapping=Python scripts : Heater example ==
-When devices are named in the configuration file, drivers are automaticall and mapped to the REST APIy called to initialize the device. We need to use the *webiopi.deviceInstance(name)* function in the Python script to retrieve the device object instance for the given name. Then we can use functions of the drivers, depending of interfaces supported. You will find a link to all interfaces supported with a complete function list on the topTMP102ch device wiki pages. See [BMP0
+When devices are named in the configuration file, drivers are automaticall and mapped to the REST APIy called to initialize the device. We need to use the *webiopi.deviceInstance(name)* function in the Python script to retrieve the device object instance for the given name. Then we can use functions of the drivers, depending of interfaces supported. You will find a link to all interfaces supported with a complete function list on the topTMPXXX TMP102ch device wiki pages. See [BMP0
 The following example automatically turns on/off the heater, plugged on a GPIO expander, depending on the temperature given by a the sensorP There is also a main *AUTO* flag to allow forcing the heater.
 {{{
 import webiopi
