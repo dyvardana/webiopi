@@ -70,12 +70,14 @@ def loop():
 def destroy():med "mcp = webiopi.deviceInstance("mcp") # retrieve the device named "mcp" in the configuration 
     mcp" in the configuration 
     gpio0.digitalWrite(HEATER, GPIO.LOW) 
+# a simple macro to return heater mode
 @webiopi.macro
 def getMode():
     if (AUTO):
         return "auto"
     return "manual"
 
+# simple macro to set and return heater mode
 @webiopi.macro
 def setMode(mode):
     global AUTO
@@ -249,4 +251,4 @@ def loop():med "gpio0" in the configuration
 
 # destroy function is called at WebIOPi shutdown
 def destroy():med "mcp" in the configuration 
-    gpio0.digitalWrite(HEATER, GPIO.LOW) # tu
+    gpio0.digitalWrite(HEATER, GPIO.LOW) # t
