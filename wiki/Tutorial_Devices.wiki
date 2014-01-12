@@ -24,7 +24,7 @@ All supported devices can be used in your Python script, from the REST API, the 
   # A supported [SENSOR#Temperature Temperature sensor]
   # A supported [DIGITAL GPIO expander]
   # Know how to wire components on the Raspberry Pi
-    * [http://google.com Google] about it. There is plenty example on Internet.e
+    * [http://google.com Google] about it. There is plenty example on Internet.e  # Check [Tutorial_Tips Hacker Tips]e
     * Luminosity
     * Distance
 
